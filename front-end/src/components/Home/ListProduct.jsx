@@ -102,7 +102,7 @@ export default function ListProduct() {
                   <strong className="text-red-600 dark:text-red-400 text-lg">
                     {formatPrice(product.price)}
                   </strong>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors duration-200 flex items-center justify-center">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white text-base px-4 py-2 rounded-md transition-colors duration-200 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 mr-1"
