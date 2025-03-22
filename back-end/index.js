@@ -10,16 +10,16 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
+    origin: process.env.FRONTEND_URL || "https://pttkhtweb.vercel.app",
     credentials: true,
-    origin: process.env.FRONTEND_URL,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
 const PORT = process.env.PORT || 8080;
 
-app.get('/', (request, response) => {
-    response.json({
-        message: "Bán rau sạch nhóm 9",
-    });
+app.get('/', (req, res) => {
+    res.json({ message: "Bán rau sạch nhóm 9" });
 });
 
 app.use(express.json());
