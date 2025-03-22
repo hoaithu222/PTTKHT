@@ -8,6 +8,7 @@ import { setOnlineUser } from "./redux/userSlice";
 import { useSocket } from "./context/SocketProvider";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const navigate = useNavigate();
@@ -51,6 +52,7 @@ export default function App() {
 
   return (
     <div className="bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark w-full min-h-screen overflow-y-auto">
+      <ScrollToTop />
       <Header />
       {/* <div className="flex  gap-2 md:gap-3 lg:gap-4 relative h-full">
         <Navbar />
