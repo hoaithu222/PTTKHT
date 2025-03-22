@@ -105,9 +105,9 @@ export default function Header() {
           className={`w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 overflow-hidden rounded-full p-0.5 ${colors.gradients.blueToPink}  cursor-pointer`}
           onClick={() => setIsOpenMenu(!isOpenMenu)}
         >
-          {user.avatar ? (
+          {user.cover_photo ? (
             <img
-              src={user?.avatar}
+              src={user?.cover_photo}
               alt="Avatar"
               className="w-full h-full object-cover rounded-full"
             />
